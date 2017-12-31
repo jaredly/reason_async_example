@@ -1,15 +1,12 @@
-Js.log("Hello, BuckleScript and Reason!");
-
 let getThing = () => Js.Promise.make((~resolve, ~reject) => [@bs]resolve(20));
-
 let getOtherThing = () => Js.Promise.make((~resolve, ~reject) => [@bs]resolve(40));
 
 let module Let_syntax = Reason_async.Promise;
 let doSomething = () => {
+  /* These two will be awaited concurrently (with Promise.all) */
   [%await let x = Js.Promise.resolve(10)
-
   and y = getThing()];
-  /* ... */
+
   [%awaitWrap let z = getOtherThing()];
   x + y + z + 3
 };
