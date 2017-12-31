@@ -1,0 +1,20 @@
+{
+  "name": "reason_async_example",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "bs-platform": "git+https://github.com/bsansouci/bsb-native"
+  },
+  "dependencies": {
+    "reason_async": "^0.2.0"
+  }
+}
