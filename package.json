@@ -12,9 +12,9 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "bs-platform": "git+https://github.com/bsansouci/bsb-native"
+    "bs-platform": "bsansouci/bsb-native#fast"
   },
   "dependencies": {
-    "reason_async": "^0.2.0"
+    "reason_async": "jaredly/reason_async#fast"
   }
 }
